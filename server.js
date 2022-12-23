@@ -16,18 +16,18 @@ const corsOptions ={
 }
 app.use(cors(corsOptions));
 
-// app.use("/properties", (req, res, next) => {
-//   let token = req.headers.authorization;
-//   if (token) {
-//     jwt.verify(token, process.env.SECRET_KEY, function (err, decoded) {
-//       if (err)  return res.status(403).send("User not authorized")
-//       req.user_mail = decoded
-//       next();
-//   })
-//   }else{
-//     res.send("User not authorized")
-//   }
-// })
+app.use("/properties", (req, res, next) => {
+  let token = req.headers.authorization;
+  if (token) {
+    jwt.verify(token, process.env.SECRET_KEY, function (err, decoded) {
+      if (err)  return res.status(403).send("User not authorized")
+      req.user_mail = decoded
+      next();
+  })
+  }else{
+    res.send("User not authorized")
+  }
+})
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
