@@ -2,107 +2,107 @@ const mongoose = require("mongoose")
 const propertyschema = new mongoose.Schema({
     propertyType: {
         type: String,
-        require: [true, "Please Select Property Type"]
+        required:true
     },
     price: {
         type: String,
-        require: [true, "Please Add Price"]
+        required:true
     },
     propertyAge: {
         type: String,
-        require: [true, "Please Select Property Age"]
+        required:true
     },
     propertyDiscription: {
         type: String,
-        require: [true, "Please Add Property Discription"]
+        required:true
     },
     negotiable: {
         type: String,
-        require: [true, "Please Select Negotiable Type"]
+        required:true
     },
     ownership: {
         type: String,
-        require: [true, "Please Select Ownership Type"]
+        required:true
     },
     propertyApproved: {
         type: String,
-        require: [true, "Please Select Property Approved Type"]
+        required:true
     },
     bankLoan: {
         type: String,
-        require: [true, "Please Select Bank Loan Type"]
+        required:true
     },
     length: {
         type: String,
-        require: [true, "Please Add Length"]
+        required:true
     },
     breadth: {
         type: String,
-        require: [true, "Please Add Breadth"]
+        required:true
     },
     totalArea: {
         type: String,
-        require: [true, "Please Add Total Area"]
+        required:true
     },
     areaUnit: {
         type: String,
-        require: [true, "Please Add Area Unit"]
+        required:true
     },
     noOfBHK: {
         type: String,
-        require: [true, "Please Select Number of BHK"]
+        required:true
     },
     noOfFloor: {
         type: String,
-        require: [true, "Please Select Number of Floor"]
+        required:true
     },
     attached: {
         type: String,
-        require: [true, "Please Select Attached Type"]
+        required:true
     },
     westernToilet: {
         type: String,
-        require: [true, "Please Select Western Toilet Type"]
+        required:true
     },
     furnished: {
         type: String,
-        require: [true, "Please Select Furnished Type"]
+        required:true
     },
     carParking: {
         type: String,
-        require: [true, "Please Select Car Parking Type"]
+        required:true
     },
     lift: {
         type: String,
-        require: [true, "Please Select Lift Type"]
+        required:true
     },
     electricity: {
         type: String,
-        require: [true, "Please Add Electricity Phase"]
+       required:true
     },
     facing: {
         type: String,
-        require: [true, "Please Select Facing Type"]
+        required:true
     },
     name: {
         type: String,
-        require: [true, "Please Select Owner Type"]
+        required:true
     },
     mobile: {
         type: String,
-        require: [true, "Please Add Mobile Number"]
+        required:true
     },
     postedBy: {
         type: String,
-        require: [true, "Please Select posted By Type"]
+        required:true
     },
     saleType: {
         type: String,
-        require: [true, "Please Select Sale Type"]
+        required:true
     },
     featuredPackage: {
         type: String,
-        require: [true, "Please Select Featured Package Type"]
+        required:true
     },
     PPDPackage: {
         type: String,
@@ -110,11 +110,11 @@ const propertyschema = new mongoose.Schema({
     },
     email: {
         type: String,
-        require: [true, "Please Add Email"]
+        required:true
     },
     city: {
         type: String,
-        require: [true, "Please Select City"]
+        required:true
     },
     area: {
         type: String,
@@ -122,11 +122,11 @@ const propertyschema = new mongoose.Schema({
     },
     pincode: {
         type: String,
-        require: [true, "Please Select Pincode"]
+        required:true
     },
     address: {
         type: String,
-        require: [true, "Please Add Address"]
+        required:true
     },
     landmark: {
         type: String,
